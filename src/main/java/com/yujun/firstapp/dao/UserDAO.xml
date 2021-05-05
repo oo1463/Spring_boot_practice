@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.yujun.firstapp.dao.UserDAO">
+
+	<select id="getUser" parameterType="string" resultType="com.yujun.firstapp.Dto.User">
+		select * from user where id = #{id}
+	</select>
+	
+	
+</mapper>
