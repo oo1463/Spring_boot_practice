@@ -10,7 +10,6 @@ import com.yujun.firstapp.Dto.User;
 import com.yujun.firstapp.service.UserService;
 
 @RestController
-@ResponseBody
 public class UserController {
 	
 	@Autowired
