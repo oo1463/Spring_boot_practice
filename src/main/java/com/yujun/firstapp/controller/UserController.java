@@ -11,9 +11,14 @@ import com.yujun.firstapp.service.UserService;
 
 @RestController
 public class UserController {
-	
+
+	private final UserService userService;
+
+	// Constructor Based Injection
 	@Autowired
-	UserService userService;
+	public UserController(UserService userService){
+		this.userService = userService;
+	}
 	
 	@GetMapping(value = "/find/{id}")
 	public User findUser(@PathVariable("id") String id) {

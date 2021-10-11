@@ -9,9 +9,15 @@ import com.yujun.firstapp.dao.UserDAO;
 @Service
 public class UserServiceImpl implements UserService {
 
+	private final UserDAO userDao;
+
+
+	// Constructor Based Injection
 	@Autowired
-	UserDAO userDao;
-	
+	public UserServiceImpl(UserDAO userDao){
+		this.userDao = userDao;
+	}
+
 	@Override
 	public User getUser(String id) {
 		return userDao.getUser(id);
