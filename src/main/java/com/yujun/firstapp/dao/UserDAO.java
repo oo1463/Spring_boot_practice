@@ -1,9 +1,8 @@
 package com.yujun.firstapp.dao;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
 
-import com.yujun.firstapp.Dto.User;
+import com.yujun.firstapp.dto.User;
 
 @Mapper
 public interface UserDAO {

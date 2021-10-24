@@ -4,7 +4,7 @@
 
 <mapper namespace="com.yujun.firstapp.dao.UserDAO">
 
-	<select id="getUser" parameterType="string" resultType="com.yujun.firstapp.Dto.User">
+	<select id="getUser" parameterType="string" resultType="com.yujun.firstapp.dto.User">
 		select * from user where id = #{id}
 	</select>
 	

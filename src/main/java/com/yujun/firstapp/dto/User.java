@@ -1,4 +1,4 @@
-package com.yujun.firstapp.Dto;
+package com.yujun.firstapp.dto;
 
 public class User {
 	private String id;
